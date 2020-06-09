@@ -1,0 +1,34 @@
+.componentBlock {
+	display: flex;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;	
+
+	&>.displayBlock {
+		display: flex;
+		flex-direction: column;
+		width: 90%;		
+		margin-top: 4rem;
+
+		&>.tableBlock {
+			display: flex;
+			flex-direction: column;
+			height: 90%;
+
+			&>.tableArea {
+				max-height: 90%;
+				overflow: auto;
+
+				.idxTitle {
+					font-weight: bold;
+				}
+			}
+
+			&>.paginationArea {
+				display: flex;
+				justify-content: flex-end;
+				margin-top: 1%;
+			}
+		}
+	}
+}
