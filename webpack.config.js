@@ -25,8 +25,8 @@ module.exports = {
 			{
         test: /\.s?css$/,
         use: [
+          'style-loader',
 					MiniCssExtractPlugin.loader,
-					// 'style-loader',
           'css-loader',
           'sass-loader'
         ],
@@ -61,7 +61,6 @@ module.exports = {
     })
   ],
 	devServer: {
-		publicPath: "/js/",
 		contentBase: path.join(__dirname, 'public'),
     watchContentBase: true,
     port: 8000
